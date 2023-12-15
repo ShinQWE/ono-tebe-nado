@@ -93,6 +93,7 @@
    max-width: 1100px;
    height: 100%;
    min-height: 757px;
+   display: flex;
 }
 
 .overlay {
@@ -103,19 +104,19 @@
    background: rgba(0, 0, 0, .6);
 }
 
-/*Нужно удалить абсолют и стили координат
-и расположить элемент с помощью сетки и отступов
-(честное слово, убил куча времени, но не смог
-разобрать, кроме как сделать top:165px)
+/*Спасибо Вам большое <3
 ==================*/
 
 .cover__title {
    position: relative;
    z-index: 1;
-   top: 165px;
-   left: 0;
+   margin-top: 165px;
    width: 100%;
+   margin-bottom: 135px;
 }
+
+/*буквы
+==================*/
 
 .letter-spacing-extended-left {
    text-align: left;
@@ -136,8 +137,7 @@
    text-align: center;
    display: block;
    line-height: 1;
-   margin-bottom: 20px;
-   margin-top: 20px;
+   margin: 20px 0;
    color: #FFF;
    font-size: 100px;
    font-style: normal;
@@ -163,14 +163,11 @@
    letter-spacing: 30px;
 }
 
-/*не знаю как по-другому сделать, 
-пришел к такому решению
+/*буквы
 ==================*/
 
 .cover__description {
-   position: absolute;
-   right: 24px;
-   bottom: 50px;
+   position: relative;
    display: flex;
    flex-wrap: nowrap;
    color: #FFF;
@@ -273,7 +270,7 @@
    margin-left: 26px;
    color: #000;
    font-size: 20px;
-   cursor: pointer;
+   text-decoration: none;
    border-bottom: 1px solid #000;
 }
 
@@ -287,7 +284,7 @@
 .about__blog {
    display: grid;
    grid-template-columns: 430px 1fr;
-   grid-template-rows: 248px 1fr;
+   grid-template-rows: 1fr;
    column-gap: 25px;
 }
 
@@ -325,7 +322,7 @@
    line-height: 1.15;
 }
 
-.about__text_margin {
+.about__paragraph {
    margin-bottom: 25px;
 }
 
@@ -363,7 +360,7 @@
    margin: 3px 0;
 }
 
-.footer__social-link {
+.footer__social-links {
    display: flex;
    flex-wrap: nowrap;
    width: 100%;
